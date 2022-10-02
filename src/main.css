@@ -1,7 +1,9 @@
 @media screen and (max-width: calc(20rem + 5px)) {
     pre,
     input,
-    button {
+    button,
+    #ad-header,
+    #ad-footer {
         margin: 5px 5px;
     }
 }
@@ -33,7 +35,9 @@ input {
 
 pre,
 input,
-button {
+button,
+#ad-header,
+#ad-footer {
     padding: 1rem 0;
     margin: 5px auto;
     font-size: 1.5em;
@@ -84,6 +88,10 @@ button {
     height: var(--height);
     line-height: var(--height);
     background: #dacfa9;
+}
+
+#ad-header {
+    height: 4rem;
 }
 
 #submit {
