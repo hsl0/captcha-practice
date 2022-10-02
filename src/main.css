@@ -90,10 +90,6 @@ button {
     background: #dacfa9;
 }
 
-#ad-header {
-    height: 4rem;
-}
-
 #submit {
     background: var(--accent-color);
 }
@@ -106,4 +102,8 @@ h1 {
     font-weight: normal;
     font-size: 3rem;
     margin: 3rem auto;
+}
+
+[data-ad-status='unfilled'] {
+    display: none !important;
 }
