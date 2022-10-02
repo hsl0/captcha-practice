@@ -1,0 +1,101 @@
+@media screen and (max-width: calc(20rem + 5px)) {
+    pre,
+    input,
+    button {
+        margin: 5px 5px;
+    }
+}
+
+:root {
+    --accent-color: rgb(8, 197, 49);
+}
+
+main {
+    --width: min(30rem, 100%);
+    width: var(--width);
+    margin: auto;
+}
+
+body {
+    background: #f4f4f4;
+    accent-color: var(--accent-color);
+}
+
+body,
+input {
+    text-align: center;
+}
+
+pre,
+input {
+    letter-spacing: 0.5rem;
+}
+
+pre,
+input,
+button {
+    padding: 1rem 0;
+    margin: 5px auto;
+    font-size: 1.5em;
+    width: var(--width);
+}
+
+#alert {
+    visibility: hidden;
+}
+
+.wrong #alert {
+    visibility: visible;
+    color: red;
+    font-style: italic;
+    text-align: left;
+}
+
+.wrong #input {
+    border: 1.5px solid red;
+}
+
+.wrong #input:focus {
+    border-width: 2px;
+}
+
+input,
+button {
+    display: block;
+}
+
+input {
+    border: 1px solid #bababa;
+}
+
+input:focus {
+    border: 1.5px solid var(--accent-color);
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+#answer {
+    --height: 4rem;
+    font-family: sans-serif;
+    height: var(--height);
+    line-height: var(--height);
+    background: #dacfa9;
+}
+
+#submit {
+    background: var(--accent-color);
+}
+
+#change {
+    background: #d9d9d9;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 3rem;
+    margin: 3rem auto;
+}
