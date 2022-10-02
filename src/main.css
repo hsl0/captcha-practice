@@ -104,6 +104,6 @@ h1 {
     margin: 3rem auto;
 }
 
-/*[data-ad-status='unfilled'] {
+[data-ad-status='unfilled'] {
     display: none !important;
-}*/
+}
