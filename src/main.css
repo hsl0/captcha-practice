@@ -84,7 +84,7 @@ button {
 
 #answer {
     --height: 4rem;
-    font-family: sans-serif;
+    font-family: cursive;
     height: var(--height);
     line-height: var(--height);
     background: #dacfa9;
