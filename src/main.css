@@ -14,7 +14,13 @@
 
 main {
     --width: min(30rem, 100%);
+}
+
+main > :not(#stat.expanded) {
     width: var(--width);
+}
+
+main > * {
     margin: auto;
 }
 
@@ -87,6 +93,7 @@ button {
     font-family: cursive;
     height: var(--height);
     line-height: var(--height);
+    font-weight: bold;
     background: #dacfa9;
 }
 
@@ -99,9 +106,89 @@ button {
 }
 
 h1 {
-    font-weight: normal;
     font-size: 3rem;
     margin: 3rem auto;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+#stat.expanded {
+    min-width: min(100%, 45rem);
+}
+
+td {
+    border: 1px solid #d8d8d8;
+    background: white;
+    padding: 0.5em;
+}
+
+#stat-expand {
+    background: none;
+    font-size: medium;
+    color: #5a5a5a;
+}
+
+#stat-expand:hover {
+    color: black;
+}
+
+#stat-expand::before {
+    margin-right: 0.5em;
+}
+
+.collapsed #stat-expand::before {
+    content: '+';
+}
+
+.expanded #stat-expand::before {
+    content: '-';
+}
+
+.collapsed .detail {
+    display: none;
+}
+
+dt {
+    text-align: initial;
+    color: #5a5a5a;
+}
+
+dl {
+    margin: 0;
+}
+
+dd {
+    text-align: end;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+dd::after {
+    font-size: large;
+    color: #5a5a5a;
+    font-weight: normal;
+    margin-left: 0.25em;
+}
+
+#done dd::after,
+#skip dd::after,
+#mistakes dd::after {
+    content: '개';
+}
+
+.spent dd::after,
+#first dd::after {
+    content: 'ms';
+}
+
+.keys dd::after {
+    content: '타';
+}
+
+.del dd::after {
+    content: '회';
 }
 
 [data-ad-status='unfilled'] {
