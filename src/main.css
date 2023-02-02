@@ -114,6 +114,10 @@ table {
     border-collapse: collapse;
 }
 
+#stat {
+    margin: 3em auto;
+}
+
 #stat.expanded {
     min-width: min(100%, 45rem);
 }
@@ -191,6 +195,6 @@ dd::after {
     content: '회';
 }
 
-[data-ad-status='unfilled'] {
+/* [data-ad-status='unfilled'] {
     display: none !important;
-}
+} */
